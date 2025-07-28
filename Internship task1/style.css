@@ -1,0 +1,71 @@
+/* Full-page background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('https://source.unsplash.com/1600x900/?healthcare,hospital');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Sidebar styling */
+#sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1e1e2f;
+  overflow-x: hidden;
+  transition: width 0.4s ease;
+  padding-top: 60px;
+  z-index: 1;
+}
+
+/* Logo */
+.logo {
+  text-align: center;
+  padding: 10px;
+}
+.logo img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Links */
+#sidebar a {
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+#sidebar a i {
+  margin-right: 12px;
+}
+#sidebar a:hover {
+  background-color: #333;
+}
+
+/* Toggle button */
+#toggleBtn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #1e1e2f;
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 2;
+  transition: background-color 0.3s;
+}
+#toggleBtn:hover {
+  background-color: #333;
+}
